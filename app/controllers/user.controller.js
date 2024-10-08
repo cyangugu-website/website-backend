@@ -1,5 +1,5 @@
 const path = require('path')
-const User = require(path.join(__dirname,'../models/user'))
+const User = require(path.join(__dirname,'../models/User'))
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 

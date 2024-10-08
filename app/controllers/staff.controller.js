@@ -1,5 +1,5 @@
 const path = require('path')
-const Staff = require(path.join(__dirname, '../models/staff'))
+const Staff = require(path.join(__dirname, '../models/Staff'))
 
 exports.createStaff = async(req,res) => {
     try {
