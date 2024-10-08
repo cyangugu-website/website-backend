@@ -2,7 +2,7 @@ const express = require('express')
 
 const router = express.Router();
 
-const staffController = require('../controllers/staff.controller')
+const staffController = require(path.join(__dirname, '../controllers/staff.controller'))
 
 router.post('/create',staffController.createStaff);
 

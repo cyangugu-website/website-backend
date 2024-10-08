@@ -1,8 +1,8 @@
 const express = require('express')
 
 const router = express.Router();
-const UserController = require('../controllers/user.controller')
-const validateInput = require('../middlewares/validateInput')
+const UserController = require(path.join(__dirname, '../controllers/user.controller'))
+const validateInput = require(path.join(__dirname, '../middlewares/validateInput'))
 
 router.post('/register', validateInput, UserController.createAccount);
 

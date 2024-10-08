@@ -7,17 +7,17 @@ const fs = require('fs')
 
 const imagesDir = path.join(__dirname, 'app/storage/gallery-pics');
 
-require('./app/config/database')
+require(path.join(__dirname, './app/config/database'))
 
 const app = express();
 
-const userRoutes = require('./app/routes/user.route')
-const titleRoutes = require('./app/routes/title.routes')
-const staffRoutes = require('./app/routes/staff.routes')
+const userRoutes = require(path.join(__dirname, './app/routes/user.route'))
+const titleRoutes = require(path.join(__dirname, './app/routes/title.routes'))
+const staffRoutes = require(path.join(__dirname, './app/routes/staff.routes'))
 
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://backend-hjjk.onrender.com'
+  origin: 'https://website-backend-ofux.onrender.com'
 }));
 app.use(express.urlencoded({ extended:true }))
 
