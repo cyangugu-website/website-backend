@@ -1,3 +1,4 @@
+const path = require('path')
 const Title = require(path.join(__dirname, '../models/title'))
 
 exports.createTitle = async (req, res) => {

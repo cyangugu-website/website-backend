@@ -1,4 +1,4 @@
-
+const path = require('path')
 const TitleController = require(path.join(__dirname, '../controllers/title.controller'))
 
 const express = require('express')

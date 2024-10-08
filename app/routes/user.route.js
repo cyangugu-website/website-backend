@@ -1,5 +1,5 @@
 const express = require('express')
-
+const path = require('path')
 const router = express.Router();
 const UserController = require(path.join(__dirname, '../controllers/user.controller'))
 const validateInput = require(path.join(__dirname, '../middlewares/validateInput'))
