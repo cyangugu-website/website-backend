@@ -16,9 +16,7 @@ const titleRoutes = require(path.join(__dirname, './app/routes/title.routes'))
 const staffRoutes = require(path.join(__dirname, './app/routes/staff.routes'))
 
 app.use(bodyParser.json());
-app.use(cors({
-  origin: 'https://website-backend-ofux.onrender.com'
-}));
+app.use(cors());
 app.use(express.urlencoded({ extended:true }))
 
 app.use('/images', express.static(imagesDir))
