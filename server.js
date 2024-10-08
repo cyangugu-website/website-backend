@@ -26,6 +26,10 @@ app.use('/user', userRoutes);
 app.use('/title', titleRoutes);
 app.use('/staff', staffRoutes)
 
+app.get("/", (req,res) => {
+  res.send("Welcome to the backend APIs")
+})
+
 app.get('/images-list', (req,res) => {
   fs.readdir(imagesDir, (err, files) => {
     if(err) { console.error('Error reading images directory:', err);
