@@ -16,7 +16,9 @@ const titleRoutes = require(path.join(__dirname, './app/routes/title.routes'))
 const staffRoutes = require(path.join(__dirname, './app/routes/staff.routes'))
 
 app.use(bodyParser.json());
+// Allows any URL to access the apis
 app.use(cors());
+
 app.use(express.urlencoded({ extended:true }))
 
 app.use('/images', express.static(imagesDir))
